@@ -1,5 +1,6 @@
 import { NextFunction, Request, Response } from "express";
 import { AppError } from "./appError";
+import { ZodError } from "zod";
 
 export class HandleError {
   static execute(
@@ -10,6 +11,10 @@ export class HandleError {
   ) {
     if (error instanceof AppError) {
       return res.status(error.statusCode).json({ message: error.message });
+    }
+
+    if (error instanceof ZodError) {
+      return res.status(400).json(error);
     }
 
     console.log(error);

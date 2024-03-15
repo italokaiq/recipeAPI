@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    /* Visit https://aka.ms/tsconfig to read more about this file */
+
+    /* Projects */
+
+    /* Language and Environment */
+    "target": "es2016",
+
+    /* Modules */
+    "module": "commonjs",
+    "typeRoots": ["node_modules/@types"],
+
+    /* JavaScript Support */
+
+    /* Emit */
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+
+    /* Type Checking */
+    "strict": true,
+    "exactOptionalPropertyTypes": true,
+
+    /* Completeness */
+    "skipLibCheck": true
+  },
+  "exclude": ["node_modules"],
+  "include": ["src/**/*"]
+}

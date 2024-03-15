@@ -36,7 +36,7 @@ export class RecipeService {
   }
 
   update(currentRecipe: TRecipe, data: TRecipeUpdateData): TRecipe {
-    const updateRecipe = { ...currentRecipe, ...data };
+    const updateRecipe = { ...currentRecipe, ...data } as TRecipe;
 
     const index = recipeList.findIndex(
       (recipe) => recipe.id === currentRecipe.id

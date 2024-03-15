@@ -3,7 +3,7 @@ import { recipeCreateDataSchema, recipeSchema, recipeUpdateDataSchema } from "..
 
 export type TRecipe = z.infer<typeof recipeSchema>;
 export type TRecipeCreateData = z.infer<typeof recipeCreateDataSchema>;
-export type TRecipeUpdateData = Partial<z.infer<typeof recipeCreateDataSchema>>; // Não está funcionando
+export type TRecipeUpdateData = z.infer<typeof recipeUpdateDataSchema>; // Não está funcionando
 
 // export type TRecipeUpdateData = Partial<TRecipeCreateData>; // Funciona corretamente
 

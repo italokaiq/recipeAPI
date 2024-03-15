@@ -9,7 +9,6 @@
 
     /* Modules */
     "module": "commonjs",
-    "typeRoots": ["node_modules/@types"],
 
     /* JavaScript Support */
 
@@ -19,7 +18,6 @@
 
     /* Type Checking */
     "strict": true,
-    "exactOptionalPropertyTypes": true,
 
     /* Completeness */
     "skipLibCheck": true
